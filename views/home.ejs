@@ -1,0 +1,11 @@
+<%- include("header.ejs") %>
+
+<h1>Welcome to PostIT!</h1>
+<form action="/home/create" method="GET">
+    <button type="submit" class="create post">Create Post</button>
+</form>
+<form action="/home/view" method="GET">
+    <button type="submit" class="view post">View Post</button>
+</form>
+
+<%- include("footer.ejs") %>

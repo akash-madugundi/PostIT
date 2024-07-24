@@ -1,0 +1,13 @@
+<%- include("header.ejs"); %>
+
+    <h1>Edit Post</h1>
+    <form action= <%= str %> method="POST">
+        <textarea name="content" rows="30" cols="80">
+            <%= postContent %>
+        </textarea>
+        <br>
+        <button type="submit">Update Post</button>
+    </form>
+    <a href=<%= str %>>Back to Post</a>
+
+<%- include("footer.ejs") %>

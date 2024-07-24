@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostIT</title>
+</head>
+<body>
+    <h1>Welcome to PostIT!</h1>
+    <p> &lt; Create, Post, Read &gt; </p>
+
+    <form action="/home" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder='𝘳𝘦𝘤𝘰𝘮𝘮𝘦𝘯𝘥𝘦𝘥:  "Akash"' required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="text" name="password" placeholder='𝘳𝘦𝘤𝘰𝘮𝘮𝘦𝘯𝘥𝘦𝘥:  "1234"' required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    <% if(method == "post") { %>
+        <p><%= message %></p>
+    <% } %>
+</body>
+</html>

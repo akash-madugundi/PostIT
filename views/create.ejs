@@ -1,0 +1,15 @@
+<%- include("header.ejs") %>
+
+<h1>Create Post</h1>
+    <form action=<%= str %> method="POST">
+        <h2>Title</h2>
+        <textarea name="title" rows="2" cols="80"></textarea>
+        <br>
+        <h2>Content</h2>
+        <textarea name="content" rows="30" cols="80"></textarea>
+        <br>
+        <button type="submit">Publish</button>
+    </form>
+
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostIT</title>
+    <script>
+        function navigateToHome() {
+            window.location.href = '/home';
+        }
+        function viewEng(){
+                console.log("English");
+            }
+        // console.log("hi");
+    </script>
+</head>
+<body>
+    <main>
+        <form action="/home" method="GET">
+            <button type="button" class="home" onclick="navigateToHome()">Home</button>             
+            <!--* using submit type, i'm getting http://localhost:3000/home? -->
+        </form>
+        <button type="button" class="info">Info</button>
+        <button type="button" class="help">Help</button>
