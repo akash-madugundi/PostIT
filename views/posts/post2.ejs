@@ -1,5 +1,8 @@
 <%- include("../header.ejs"); %>
+<link href="/styles/style.css" rel="stylesheet">
+<link href="/styles/poststyle.css" rel="stylesheet">
 
+<div class="blog">
     <h1>The Reddits</h1>
     <h2>July 2024</h2>
     <p>I met the Reddits before we even started Y Combinator. In fact they were one of the reasons we started it.
@@ -20,13 +23,20 @@ They would have liked to call it Snoo, as in "What snoo?" But snoo.com was too e
 
 As with all the really great startups, there's an uncannily close match between the company and the founders. Steve in particular. Reddit has a certain personality — curious, skeptical, ready to be amused — and that personality is Steve's.
     </p>
+</div>
 
-    <form action="/home/view/post2/edit" method="GET">
-        <button type="submit" class="edit post">Edit Post</button>
-    </form>
+<div class="action-control">
+    <div>
+        <form action="/home/view/post2/edit" method="GET">
+            <button type="submit" class="edit post">Edit Post</button>
+        </form>
+    </div>
 
-    <form action="/home/view/post2/delete" method="GET">
-        <button type="submit" class="delete post">Delete Post</button>
-    </form>
+    <div>
+        <form action="/home/view/post2/delete" method="GET">
+            <button type="submit" class="delete post">Delete Post</button>
+        </form>
+    </div>
+</div>
 
     <%- include("../footer.ejs") %>

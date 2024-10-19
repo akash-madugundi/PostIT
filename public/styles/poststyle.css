@@ -1,0 +1,53 @@
+.blog{
+    margin: 50px 300px 50px 300px;
+    padding: 50px;
+    background-color: #0A2A47;
+    box-shadow: 0 0 10px skyblue;
+    border-radius: 50px;
+}
+
+.blog h1,h2{
+    text-align: center;
+    color: white;
+}
+
+.blog p{
+    padding-top: 15px;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+.action-control{
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="submit"] {
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  [type="submit"]:hover {
+    opacity: 0.7;
+  }
+
+.edit{
+    background: green;
+}
+
+.delete{
+    background: red;
+}

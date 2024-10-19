@@ -1,31 +1,34 @@
     </main>
-
-        <footer>
-            <label for = "language">Language</label>
-            <select name="language" id="language">
-                <option value="english">English</option>
-                <option value="german">German</option>
-            </select>
-            <a href="./public/about.html">About</a>
-            <a href="./public/contact.html">Contact</a>
-            <button type="button" class="feedback">Feedback</button>
-            <p>Copyright © PostIT 2024</p>
-        </footer>
-
-        <!-- <script>
-            function viewEng(){
-                console.log("English");
-            } -->
-            <!-- // document.getElementById('language').addEventListener('change', function() {
-            //     var selectedLanguage = this.value;
-            //     if (this.value === 'english') {
-            //         console.log('English is selected');
-            //     } else if (this.value === 'german') {
-            //         console.log('German is selected');
-            //     }
-            // });
-            // document.getElementById('language').dispatchEvent(new Event('change')); -->
-        <!-- </script> -->
+        <div class="blur px-3 py-2 mt-5 border-top">
+            <div class="container">
+                <footer class="py-3">
+                  <ul class="nav justify-content-center pt-3 pb-3 mb-3">
+                    <li class="nav-item"><a href="/about" class="nav-link px-2 text-white text-decoration-none">About</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link px-2 text-white text-decoration-none">Contact Us</a></li>
+                    <li class="nav-item"><a href="/feedback" class="nav-link px-2 text-white text-decoration-none">Feedback</a></li>
+                  </ul>
+                  <p class="text-center text-white text-decoration-none">Copyright © PostIT 2024</p>
+                </footer>
+            </div>
+        </div>
+            
+        <script>
+            function languageChanged() {
+                var language = document.getElementById("language").value;
+                if (language === "english") {
+                    navigateToEng();
+                } else if (language === "german") {
+                    navigateToGer();
+                }
+            }
+            function navigateToEng() {
+                console.log("Navigating to English version");
+            }
+            function navigateToGer() {
+                document.getElementById("ifGerman").innerText = "Aww! Snap";
+                console.log("Navigating to German version");
+            }
+        </script>
   </body>
   
 </html>

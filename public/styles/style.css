@@ -1,0 +1,27 @@
+body{
+    /* background: url('./images/background2.png') no-repeat; */                
+    /* *IMPORTANT */
+    background: url('../images/homeBackground.png') no-repeat;
+    background-size: cover;
+}
+
+.nav-link.active {
+    color: grey !important;
+}
+
+li{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* .intro{
+    margin-left: 100px;
+    color: white;
+} */
+/* not common */
+
+.blur{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+

@@ -1,11 +1,56 @@
 <%- include("header.ejs") %>
 
-<h1>Welcome to PostIT!</h1>
-<form action="/home/create" method="GET">
-    <button type="submit" class="create post">Create Post</button>
-</form>
-<form action="/home/view" method="GET">
-    <button type="submit" class="view post">View Post</button>
-</form>
+<style>
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+} 
+
+.intro{
+    margin-left: 100px;
+    margin-top: 40px;
+    color: white;
+    transition: font-size 1s ease-in-out, color 1s ease-in-out;
+}
+
+.intro:hover {
+    font-size: 30px;
+    color: grey;
+}
+
+.post-management-container{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+    text-align: center;
+}
+</style>
+
+<h1 class="intro"><img class="logo" src="images/PostIT.jpeg">Welcome to PostIT!</h1>
+
+<div class="post-management-container">
+        <form action="/home/create" method="GET" class="card rounded-5 bg-dark" style="border: 5px solid #ffffffc9; height: 220px; width: 200px; box-shadow: 3px 3px 5px rgba(211, 211, 211, 0.192);">   
+                <div class="card-body">
+                    <div class="mx-auto my-auto" style="height: 120px; width: 120px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.767);"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
+                    </div>
+                    <button type="submit" class="w-100 my-2 btn btn-lg btn-primary">Create Post</button>
+                </div>
+        </form>
+    
+        <form action="/home/view" method="GET" class="card rounded-5 bg-dark" style="border: 5px solid #ffffffc9; height: 220px; width: 200px; box-shadow: 3px 3px 5px rgba(211, 211, 211, 0.192);">
+                <div class="card-body">
+                    <div class="mx-auto my-auto" style="height: 120px; width: 120px;">
+                        <svg class="my-2" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.767);"><path d="M2 8v11.529S6.621 19.357 12 22c5.379-2.643 10-2.471 10-2.471V8s-5.454 0-10 2.471C7.454 8 2 8 2 8z"></path><circle cx="12" cy="5" r="3"></circle></svg>
+                    </div>
+                    <button type="submit" class="w-100 my-2 btn btn-lg btn-primary">View Posts</button>
+                </div>
+        </form>
+</div>
 
 <%- include("footer.ejs") %>

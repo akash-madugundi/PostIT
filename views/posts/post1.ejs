@@ -1,9 +1,11 @@
 <%- include("../header.ejs"); %>
+<link href="/styles/style.css" rel="stylesheet">
+<link href="/styles/poststyle.css" rel="stylesheet">
 
+<div class="blog">
     <h1>The Right Kind of Stubborn</h1>
     <h2>July 2024</h2>
-    <p>
-        Successful people tend to be persistent. New ideas often don't work at first, but they're not deterred. They keep trying and eventually find something that does.
+    <p>        Successful people tend to be persistent. New ideas often don't work at first, but they're not deterred. They keep trying and eventually find something that does.
 
     Mere obstinacy, on the other hand, is a recipe for failure. Obstinate people are so annoying. They won't listen. They beat their heads against a wall and get nowhere.
 
@@ -15,16 +17,23 @@
 
     There's something annoying about the obstinate that's not simply due to being mistaken. They won't listen. And that's not true of all determined people. I can't think of anyone more determined than the Collison brothers, and when you point out a problem to them, they not only listen, but listen with an almost predatory intensity. Is there a hole in the bottom of their boat? Probably not, but if there is, they want to know about it.
 
-    It's the same with most successful people. They're never more engaged than when you disagree with them. Whereas the obstinate don't want to hear you. When you point out problems, their eyes glaze over, and their replies sound like ideologues talking about matters of doctrine. [2]
+    It's the same with most successful people. They're never more engaged than when you disagree with them. Whereas the obstinate don't want to hear you. When you point out problems, their eyes glaze over, and their replies sound like ideologues talking about matters of doctrine.
 
     </p>
+</div>
 
-    <form action="/home/view/post2/edit" method="GET">
-        <button type="submit" class="edit post">Edit Post</button>
-    </form>
+<div class="action-control">
+    <div>
+        <form action="/home/view/post1/edit" method="GET">
+            <button type="submit" class="edit post">Edit Post</button>
+        </form>
+    </div>
 
-    <form action="/home/view/post2/delete" method="GET">
-        <button type="submit" class="delete post">Delete Post</button>
-    </form>
+    <div>
+        <form action="/home/view/post1/delete" method="GET">
+            <button type="submit" class="delete post">Delete Post</button>
+        </form>
+    </div>
+</div>
 
     <%- include("../footer.ejs") %>

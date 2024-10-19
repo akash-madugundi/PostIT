@@ -1,0 +1,41 @@
+<%- include("header.ejs") %>
+
+<style>
+.intro{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.info{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-style: oblique;
+    margin-bottom: 143px;
+    padding: 0;
+}
+
+.info li {
+    position: relative;
+}
+
+.colon {
+    position: absolute;
+    left: 300px;
+}
+
+</style>
+<div class="intro">
+    <h1>Blogs Info</h1>
+</div>
+<ul class="info">
+    <li>Total Blogs<span class="colon">: <%= numberOfDivs %></span></li>
+    <li>Last Edited<span class="colon">: <%= lastEdited %></span></li>
+    <li>Previously Deleted<span class="colon">: <%= lastDeleted %></span></li>
+</ul>
+
+<%- include("footer.ejs") %>

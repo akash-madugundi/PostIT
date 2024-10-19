@@ -1,5 +1,8 @@
 <%- include("../header.ejs"); %>
+<link href="/styles/style.css" rel="stylesheet">
+<link href="/styles/poststyle.css" rel="stylesheet">
 
+<div class="blog">
     <h1>How to Start Google</h1>
     <h2>July 2024</h2>
     <p>(This is a talk I gave to 14 and 15 year olds about what to do now if they might want to start a startup later. Lots of schools think they should tell students something about startups. This is what I think they should tell them.)
@@ -18,13 +21,20 @@ You might have thought I was joking when I said I was going to tell you how to s
 
 All you can know when you start working on a startup is that it seems worth pursuing. You can't know whether it will turn into a company worth billions or one that goes out of business. So when I say I'm going to tell you how to start Google, I mean I'm going to tell you how to get to the point where you can start a company that has as much chance of being Google as Google had of being Google. [1]
     </p>
+</div>
 
-    <form action="/home/view/post3/edit" method="GET">
-        <button type="submit" class="edit post">Edit Post</button>
-    </form>
-
-    <form action="/home/view/post3/delete" method="GET">
-        <button type="submit" class="delete post">Delete Post</button>
-    </form>
+    <div class="action-control">
+        <div>
+            <form action="/home/view/post3/edit" method="GET">
+                <button type="submit" class="edit post">Edit Post</button>
+            </form>
+        </div>
+    
+        <div>
+            <form action="/home/view/post3/delete" method="GET">
+                <button type="submit" class="delete post">Delete Post</button>
+            </form>
+        </div>
+    </div>
 
     <%- include("../footer.ejs") %>

@@ -1,0 +1,76 @@
+<%- include("header.ejs") %>
+<style>
+.intro{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.feedback-input {
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border: 2px solid #3586ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 40%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #3586ff;
+}
+
+textarea {
+  height: 200px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  background: #0d6efd;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #1565c0;
+}
+</style>
+
+<div class="intro">
+  <h1>Feedback</h1>
+</div>
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Name" /> <br>
+  <input name="email" type="text" class="feedback-input" placeholder="Email" /> <br>
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea> <br>
+  <input type="submit" value="SUBMIT" />
+</form>
+
+<%- include("footer.ejs") %>
