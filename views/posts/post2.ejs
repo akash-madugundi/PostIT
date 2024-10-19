@@ -1,0 +1,42 @@
+<%- include("../header.ejs"); %>
+<link href="/styles/style.css" rel="stylesheet">
+<link href="/styles/poststyle.css" rel="stylesheet">
+
+<div class="blog">
+    <h1>The Reddits</h1>
+    <h2>July 2024</h2>
+    <p>I met the Reddits before we even started Y Combinator. In fact they were one of the reasons we started it.
+
+YC grew out of a talk I gave to the Harvard Computer Society (the undergrad computer club) about how to start a startup. Everyone else in the audience was probably local, but Steve and Alexis came up on the train from the University of Virginia, where they were seniors. Since they'd come so far I agreed to meet them for coffee. They told me about the startup idea we'd later fund them to drop: a way to order fast food on your cellphone.
+
+This was before smartphones. They'd have had to make deals with cell carriers and fast food chains just to get it launched. So it was not going to happen. It still doesn't exist, 19 years later. But I was impressed with their brains and their energy. In fact I was so impressed with them and some of the other people I met at that talk that I decided to start something to fund them. A few days later I told Steve and Alexis that we were starting Y Combinator, and encouraged them to apply.
+
+That first batch we didn't have any way to identify applicants, so we made up nicknames for them. The Reddits were the "Cell food muffins." "Muffin" is a term of endearment Jessica uses for things like small dogs and two year olds. So that gives you some idea what kind of impression Steve and Alexis made in those days. They had the look of slightly ruffled surprise that baby birds have.
+
+Their idea was bad though. And since we thought then that we were funding ideas rather than founders, we rejected them. But we felt bad about it. Jessica was sad that we'd rejected the muffins. And it seemed wrong to me to turn down the people we'd been inspired to start YC to fund.
+
+I don't think the startup sense of the word "pivot" had been invented yet, but we wanted to fund Steve and Alexis, so if their idea was bad, they'd have to work on something else. And I knew what else. In those days there was a site called Delicious where you could save links. It had a page called del.icio.us/popular that listed the most-saved links, and people were using this page as a de facto Reddit. I knew because a lot of the traffic to my site was coming from it. There needed to be something like del.icio.us/popular, but designed for sharing links instead of being a byproduct of saving them.
+
+So I called Steve and Alexis and said that we liked them, just not their idea, so we'd fund them if they'd work on something else. They were on the train home to Virginia at that point. They got off at the next station and got on the next train north, and by the end of the day were committed to working on what's now called Reddit.
+
+They would have liked to call it Snoo, as in "What snoo?" But snoo.com was too expensive, so they settled for calling the mascot Snoo and picked a name for the site that wasn't registered. Early on Reddit was just a provisional name, or so they told me at least, but it's probably too late to change it now.
+
+As with all the really great startups, there's an uncannily close match between the company and the founders. Steve in particular. Reddit has a certain personality — curious, skeptical, ready to be amused — and that personality is Steve's.
+    </p>
+</div>
+
+<div class="action-control">
+    <div>
+        <form action="/home/view/post2/edit" method="GET">
+            <button type="submit" class="edit post">Edit Post</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="/home/view/post2/delete" method="GET">
+            <button type="submit" class="delete post">Delete Post</button>
+        </form>
+    </div>
+</div>
+
+    <%- include("../footer.ejs") %>

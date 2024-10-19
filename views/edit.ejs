@@ -1,0 +1,81 @@
+<%- include("header.ejs"); %>
+<link href="/styles/style.css" rel="stylesheet">
+<style>
+.intro{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-box textarea{
+    margin: 15px;
+    margin-bottom: 30px;
+    padding: 50px;
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-align: center;
+    width: 800px;
+    height: 700px;
+    border: none;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #0d6efd;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.back{
+    margin-right: 360px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back a{
+    color: green;
+}
+</style>
+
+    <h1 class="intro">Edit Post</h1>
+    <form action= <%= str %> method="POST">
+        <div class="edit-box">
+            <textarea name="content"><%= postContent %></textarea>
+        </div>
+        <div class="btn">
+            <button type="submit">Update Post</button>
+        </div>
+    </form>
+    <div class="back">
+        <a href=<%= str %>>Back to Post</a>
+    </div>
+
+<%- include("footer.ejs") %>

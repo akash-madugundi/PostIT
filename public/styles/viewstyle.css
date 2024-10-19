@@ -1,0 +1,33 @@
+#posts{
+    margin-top: 30px;
+    margin-left: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#posts a:link, a:visited{
+    font-weight: bold;
+    background-color: #0d6efd;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+#posts a:hover, a:active {
+    background-color: 	#32CD32;
+}
+
+.intro{
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+}
